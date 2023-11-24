@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo- input => javascript.</title>
+    <style>
+        body{
+            background-color: darkslategrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Input Com javascript.</h1>
+<br>
+<p>Certamente! Abaixo está um exemplo de arquivo HTML com um formulário que usa JavaScript para atualizar o conteúdo de um <div>com um ID especificado quando <br> o usuário insere texto em um campo de entrada</p>
+    <br>
+    <label for = "textInput">Enter  Text:</label>
+    <input type = "text" id="textInput">
+    <button onclick="updateDiv()">Submit</button>
+
+    <div id="outputDiv">
+        <!--The content will be update dymically-->
+    </div>
+    <script>
+        function updateDiv() {
+            // Get the input value
+            var inputVale = document.getElementById('textInput').value;
+
+            // Get the div by ID
+            var outputDiv = document.getElementById('outputDiv');
+            // Update the content of the div
+            outputDiv.innertHTML = "you entered; " + inputValue;
+        }
+    </script>
+    <br>
+    <a href="ExemploOutput.html"><h3>Exemplo👉Output<h3></a>
+</body>
+</html>

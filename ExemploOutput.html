@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output Em javascript.</title>
+    <style>
+        body{
+            background-color: #696969;
+
+        }
+        h1{
+            color: #ffffff;
+            text-shadow: 1px 1px 1px #000, -1px 1px 1px #ff0505, -1px 1px 1px #000;
+        }
+        #Text{
+            background: linear-gradient(to bottom, #ffe8d4, #f69d3c);
+            border: 1px solid #696969;
+            border-radius: 10px;
+            width: 350px;
+            margin: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 1px black;
+        }
+        #Box1 {
+            background:  linear-gradient(to bottom, #ffe8d4, #f63c3c);
+            border: 1px solid #696969;
+            border-radius: 10px;
+            width: 350px; 
+            margin:50px;
+            box-shadow: 2px 2px 1px black;
+            text-align: center;
+
+
+        }
+        #output {
+            background: linear-gradient(to bottom, #ffe8d4, #f69d3c);
+            border: 1px solid #696969;
+            border-radius: 10px;
+            width: 350px;
+            margin: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 1px black;
+
+        }
+        p{
+        color: rgb(0,0,0);
+        text-align: center;
+        text-shadow: 1px 2px 3px #000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Criando Elementos em javascript.</h1>
+    <p>Criando um elemento em javascript.</p>
+    <br>
+    <div id="Box1">
+        <h1>Criando uma div box id.</h1>
+    </div>
+    <br>
+    <div id="output">
+      <h2>Esté é um programa javascript.</h2>
+    </div>
+    <br>
+    <div id="Text">
+        <h1>Este é um teste javascript.</h1>
+    </div>
+ 
+    <script>
+        var outputDiv = document.getElementById("output");
+        var Box1 = document.getElementById("Box1");
+        var Text = document.getElementById("Text");
+
+        outputDiv.innerHTML = "Esté é um programa em javascript";
+        Text.innerHTML = "Esta é um teste javascript";
+    </script>
+    <p>O código JavaScript usa o método Document.getElementById () para selecionar os elementos HTML específicos com os IDs fornecidos (saída, Box1, texto).<br>Em seguida, atualiza o conteúdo desses elementos usando a propriedade InnerHTML.Nesse caso, o conteúdo é atualizado para exibir o texto especificado dentro dos elementos correspondentes.</p>
+</body>
+</html>
