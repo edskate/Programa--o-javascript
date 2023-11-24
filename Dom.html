@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Manipulação Exeample.</title>
+    <style>
+        body{
+        margin: 5%;
+        }
+      h1{
+      color: blueviolet;
+      text-shadow: 1px 1px 1px #000, -1px 1px 1px red, -1px 1px 1px green;
+      }
+      h2{
+      color: crimson;
+      text-shadow: 1px 1px 1px #000, -1px 1px 1px red, -1px 1px 1px green;
+      font-size: 25px;
+      }
+      p{
+        color: #0080ff;
+        font-size: 20px;
+      }
+      </style>
 </head>
 <body>
+    <h1>DOM Manipulation Example.</h1>
+
+    <script>
+        // JavaScript code for DOM manipulation
+        document.addEventListener("DOMContentLoaded", function () {
+          // Create a new paragraph element
+          var paragraph = document.createElement("p");
     
+          // Set the text content of the paragraph
+          paragraph.textContent = "This is a paragraph created with JavaScript.";
+    
+          // Set an attribute (class) for the paragraph
+          paragraph.setAttribute("class", "highlight");
+    
+          // Append the paragraph to the body of the document
+          document.body.appendChild(paragraph);
+        });
+      </script>
+    <br>
+    <p>Neste exemplo, o código JavaScript espera que o conteúdo do DOM seja totalmente carregado <br>( DOMContentLoadedevento) antes de ser executado. <br> Em seguida, ele cria um novo pelemento (parágrafo), define seu conteúdo de texto, <br> adiciona um atributo de classe e, finalmente, anexa-o ao corpo do documento HTML. <br> O parágrafo será exibido na página da web quando for carregado.</p>
+    <br>
+    <a href=""></a>
 </body>
 </html>
